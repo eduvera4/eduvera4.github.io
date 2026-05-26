@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Hola, soy Edu!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* 1. CONFIGURACIÓN DEL FONDO GENERAL */
+        body {
+            background-color: #0c0f1d; /* Un fondo azul oscuro espacial */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            padding-bottom: 50px;
+        }
+
+        /* 2. CONTENEDOR PRINCIPAL CENTRADO */
+        .tarjeta-presentacion {
+            max-width: 650px;
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.03); /* Un toque sutil de fondo */
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px dashed #00FF66; /* Borde divertido verde fosforescente */
+            box-sizing: border-box;
+        }
+
+        /* 3. TÍTULOS ESTILO CÓMIC */
+        .titulo-principal {
+            font-family: 'Bangers', cursive;
+            font-size: 5em;
+            color: #00FF66; /* Tu verde fosforescente favorito */
+            margin: 0 0 10px 0;
+            text-shadow: 3px 3px 0px #000;
+            letter-spacing: 2px;
+        }
+
+        .subtitulo {
+            font-family: 'Bangers', cursive;
+            font-size: 2.2em;
+            color: #ff3366; /* Un rosa/rojo neón divertido para resaltar secciones */
+            text-shadow: 2px 2px 0px #000;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* 4. ESTILO DE LOS PÁRRAFOS (SUBTEXTOS) */
+        .parrafo {
+            font-size: 1.4em;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin: 0 0 15px 0;
+        }
+
+        /* Resaltador de texto importante */
+        .resaltado {
+            color: #00FF66;
+            font-weight: bold;
+        }
+
+        /* 5. SECCIÓN DIVERTIDA DE AMIGOS */
+        .lista-amigos {
+            list-style: none; /* Quita los puntitos negros por defecto */
+            padding: 0;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .tarjeta-amigo {
+            background-color: #1a1f36;
+            color: #fff;
+            padding: 12px 20px;
+            margin: 8px auto;
+            max-width: 400px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-left: 5px solid #00FF66; /* Línea verde al costado */
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s; /* Efecto suave al pasar el mouse */
+        }
+
+        /* Efecto cuando pasas el mouse por encima de un amigo */
+        .tarjeta-amigo:hover {
+            transform: scale(1.05);
+            background-color: #22294a;
+            cursor: pointer;
+        }
+
+        /* 6. IMAGEN O STICKER ANIMADO */
+        .imagen-animada {
+            max-width: 240px;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 8px 25px rgba(0,0,0,0.7);
+            display: block;
+            margin: 30px auto 10px auto;
+            
+            /* Animación de flotado continuo */
+            animation: flotarSuelo 3s ease-in-out infinite;
+        }
+
+        /* Animación de flotar en el espacio */
+        @keyframes flotarSuelo {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+            100% { transform: translateY(0px); }
+        }
+		
+		a:hover{
+		    color:#00FF66;
+			text-decoration:underline;
+		}
+    </style>
+</head>
+<body>
+
+    <div class="tarjeta-presentacion">
+        
+        <h1 class="titulo-principal">¡Hola esta es mi pagina web!</h1>
+        
+        <p class="parrafo">
+            ¡Bienvenidos a mi zona web! Me llamo <span class="resaltado">Edu Enrrique Vera Alfaro</span> y tengo 18 años.
+        </p>
+
+	
+        <p class="parrafo">
+		
+            Actualmente soy estudiante en la <span class="resaltado"><a href="https://ucsp.edu.pe/">Universidad Católica San Pablo</a></span>.
+            Estoy cruzando el <span class="resaltado">primer ciclo</span> en la increíble carrera de 
+ 
+            <span class="resaltado">Ciencia de la Computación</span>. 💻✨
+        </p>
+        <img class="imagen-animada" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErTrfnDrE-hedgLjn5JU24SHpi1ejMan-RA&s" alt="Mi Sticker">
+    </div>
+	<div class="tarjeta-presentacion">
+        
+        <h2 class="titulo-principal">¡estos son los cursos que llevo!</h2>
+        
+        <p class="parrafo">
+             <span class="resaltado">¡introduccion de programacion!</span> el curso lo llevo con la ingeniera de sistemas y magíster en Ciencia de la Computación
+			 <span class="resaltado"><a href="https://www.linkedin.com/in/kelly-vizconde-la-motta-3a57a4143/">Vizconde la motta kelly</a></span>.
+        </p>
+		<p class="parrafo">
+             <span class="resaltado">loguica</span> el curso lo llevo con la docente
+			 <span class="resaltado"><a href="">Solange Ximena Tejada Cuadros</a></span>.
+        </p> 
+		<p class="parrafo">
+             <span class="resaltado">fundamentos matematicos para computacion</span> el curso lo llevo con la docente
+			 <span class="resaltado"><a href="https://www.linkedin.com/in/fiorella-mar%C3%ADa-rend%C3%B3n-garc%C3%ADa-7aa9b7374/">Fiorella María Rendón García</a></span>.
+        </p>
+		<p class="parrafo">
+             <span class="resaltado">communicacion I</span> el curso lo llevo con la docente 
+			 <span class="resaltado"><a href="">lourdes eliana velarde ortiz </a></span>.
+        </p>
+		<p class="parrafo">
+             <span class="resaltado">introduccion a la vida universitaria</span> el curso lo llevo con la docente
+			 <span class="resaltado"><a href=""></a></span>.
+        </p>
+		<p class="parrafo">
+             <span class="resaltado">introduccion a computacion</span> el curso lo llevo con el Dr.
+			 <span class="resaltado"><a href="https://www.linkedin.com/in/ecuadrosv/">Ernesto Cuadros Vargas </a></span>.
+        </p>
+
+	
+	</div>
+	
+	<div class="tarjeta-presentacion">
+        <h3 class="subtitulo">👥 MI TRIPULACIÓN (Amigos)</h3>
+        <p class="parrafo" style="font-size: 1.1em; color: #aaa;">Las personas geniales que me acompañan en esta aventura:</p>
+
+        <ul class="lista-amigos">
+            <li class="tarjeta-amigo">🚀<a href=""></a></li> 
+            <li class="tarjeta-amigo">🎮<a href="https://gabriel-flores-ll.github.io/" target="_blank">gabriel fabricio flores llacaya</a></li>
+            <li class="tarjeta-amigo">🎨<a href=""></a></li>
+            <li class="tarjeta-amigo">📚<a href=""></a></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
